@@ -1,16 +1,12 @@
-# Proyecto: La Pachamama te aconseja
 
+# Proyecto: La Pachamama te aconseja 
 
 ##Indice
 - [Resumen](#Resumen)
 - [Investigación UX](#Investigación UX)
-- [Investigación UX](Investigación UX)
-
 
 #Resumen
 Es una campaña de difusión de buenas prácticas ambientales, que le permitirá al usuario reflexionar y tomar conciencia de cómo sus actividades diarias pueden afectar el equilibrio de la Tierra.
-
-
 
 ##Investigación UX:
 
