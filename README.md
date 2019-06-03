@@ -1,3 +1,23 @@
+# Proyecto: La Pachamama te aconseja 
+
+Es una campaña de difusión de buenas prácticas ambientales, que le permitirá al usuario reflexionar y tomar conciencia de cómo sus actividades diarias pueden afectar el equilibrio de la Tierra.
+
+
+
+Investigación UX:
+
+Esta aplicación Web tendrá dos tipos de usuarios, el primero comparte un consejo (buena práctica ambiental). Mientras que el segundo usuario, es el receptor de ese consejo compartido como un secreto del primer usuario; y junto con un código clave, le permitirá descifrar el mensaje compartido. Los objetivos de este producto son:
+
+Sensibilizar a los usuarios en el impacto de sus actividades diarias sobre el medio ambiente.
+Difundir buenas prácticas ambientales que contribuyan con la Educación Ambiental e influyan positivamente en el estilo de vida de los usuarios.
+
+El producto actúa como una campaña de difusión de buenas prácticas ambientales de una manera divertida para que los usuarios reflexionen sobre la problemática actual en el uso irracional de los recursos naturales que afectan significativamente el medio ambiente. Se espera que los usuarios adopten las buenas prácticas ambientales compartidas en esta aplicación web para mejorar su estilo de vida, contribuyendo al desarrollo sostenible y al uso racional de los recursos naturales.
+
+
+Primer prototipo en papel
+
+El usuario debe ingresar su nombre y la contraseña LABORATORIA que le fue suministrada previamente y dar click en el botón Ingresar.
+
 # Cifrado César
 
 ## Índice
