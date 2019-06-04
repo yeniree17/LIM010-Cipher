@@ -1,1 +1,15 @@
 /* Acá van tus reglas de estilo */
+html {
+    box-sizing: border-box;
+    background-color: #9cff33;
+    font-size: 30px;
+}
+
+header {
+    padding: 20px 50px;
+    vertical-align: middle;
+  }
+
+body {
+    font-family: 'Gochi Hand', cursive;
+}
