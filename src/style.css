@@ -8,7 +8,7 @@ body {
     font-family: 'Gochi Hand', cursive;
     background-color: #9cff33;
     max-width: 1500px;
-    align-content: center;
+   
 }
 header {
     padding: 100px 100px;
@@ -17,7 +17,7 @@ header {
     background-repeat: no-repeat;
     background-size: 100vw 50vh;
     opacity: 0.9;
-    
+    font-size: 40px;
     vertical-align: middle;
     text-align:center;
   }
@@ -25,15 +25,56 @@ h1 {
     padding: 3px 3px 3px 7px;
     text-align: right;
     text-shadow: 1px 1px 1px orangered;
+    font-size: 40px;
 }
-.ventana1 {
-    display: inline-block;
+.img1 {
+    width: 40%;
+    border: 1px solid #ccc;
+    margin: 20px;
+    float: left;
 }
+
 .formulario {
+    width: 40%;
+    border: 1px solid #ccc;
+    margin: 20px 40px;
+    padding: 20px;
+    display: inline-block;
     color: darkblue;
+    font-size: 20px;
+    text-align: left;
+    vertical-align: middle;
+}
+
+label{
+    display: block;
+    width: 100%;
+    margin-bottom: 20px;
+}
+.box{
+    margin-bottom: 20px;
+    width: 60%;
+    padding: 10px;
+}
+.box:focus{
+    border: 1px solid #1668c4;
+}
+button[type='submit']{
+    background: #1668c4;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    margin-bottom: 20px;
+    width: 30%;
+    padding: 10px;
+}
+button[type='submit']:hover{
+    background: #4a88f4;
+    cursor: pointer;
 }
 
 footer{
+    clear: both;
     text-align: center;
     font-size: 15px;
 }

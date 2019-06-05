@@ -7,36 +7,37 @@
   </head>
   <body>
     <header>La Pachamama te aconseja</header>
-    <main>
+  <main>
   <!-- Pantalla de bienvenida -->
-<section class="ventana1" id="inicio" style=""> 
+<div class="ventana1" id="inicio" style=""> 
   <h1>... y te obsequia sus secretos</h1>
   <p>Primero ingresa tu nombre y la contraseña que te suministraron</p>
-  <figure class="img1">
+  <div class="img1">
     <img src="https://user-images.githubusercontent.com/50186958/58898496-59350300-86c0-11e9-8f9e-083fed5ea48f.PNG">
-  </figure>
-  
-  <form action="" class="formulario">
+  </div>
+<div class="formulario">
+  <form action="">
   <label for="name">Ingresa tu nombre:</label>
   <input class=box id="nombre" type="text" placeholder="Tu nombre" required>
-<br>
+<br><br>
   <label for="password">Ingresa tu contraseña:</label>
   <input class=box id="password" type="password" placeholder="Contraseña en Mayúscula" required>
-  <button class='btn' type="submit" id="botonPassword">Ingresar</button>
+ <br> <br>
+ <button class='btn' type="submit" id="botonPassword">Ingresar</button>
 </form>
-
-</section>
+</div>
+</div>
 
 <!-- Pantalla de opciones -->
-<section class="ventana2" id="opciones" style="display:none;">
+<div class="ventana2" id="opciones" style="display:none;">
 <h2 id='nombre2'> Hola </h2>
 <p>Escoge una de estas opciones</p>
 <button class='btn' type="button" id="darConsejo" >Regalar un Consejo</button>
 <button class='btn' type="button" id="descifrarSecreto">Descifrar Secreto</button>
-</section>
+</div>
 
     </main>
-    <footer><p> <em>(c) Todos los Derechos Reservados - Desarrollado por Rosly 2019 <br> <a href="mailto:yeniree17@gmail.com">Contactanos</a></em></p></footer>
+    <footer><p> <em>(c) Todos los Derechos Reservados - Desarrollado por <strong>Rosly 2019</strong><br> <a href="mailto:yeniree17@gmail.com">Contáctanos</a></em></p></footer>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body> 
