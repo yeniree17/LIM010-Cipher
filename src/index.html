@@ -5,7 +5,8 @@
     <title>Pachamama te aconseja</title>
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="style.css" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png"/>
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Indie+Flower&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" type="imagen/png" href= "https://pngimage.net/wp-content/uploads/2018/06/icono-medio-ambiente-png-3.png"/>
   </head>
   <body>
     <header>La Pachamama te aconseja</header>
@@ -32,27 +33,73 @@
 
 <!-- Pantalla de opciones -->
 <div class="ventana2" id="opciones" style="display: none">
-<h2 id='nombre2'></h2>
+<h2 id='nombre2'> Hola </h2>
 <p>Escoge una de estas opciones</p>
 <button class='btn' type="button" id="darConsejo" >Regalar un Consejo</button>
 <button class='btn' type="button" id="descifrarSecreto">Descifrar Secreto</button>
 </div>
 
-<!-- Pantalla de codificar el secreto -->
+<!-- Pantalla de codificar el Consejo -->
 <div class="ventana3" id="cifMje" style="display: none">
-<h2>¿Quieres ayudar </h2>
-<p>fdfgdsg</p>
-<input type="number" min="1" max="99">
+<h2>¿Quieres ayudar a nuestra tierra a crear consciencia ambiental?</h2>
+<p>Te invitamos a compartir con tus amigos de forma divertida tus buenas prácticas ambientales</p>
+<img src="" alt="">
+<p>Primero, debes crear un <strong><em>Código Clave</em></strong> que será utilizado por la persona <br>
+   que descifre tu mensaje _(debe tener sólo valores numéricos desde el 01 al 99)_</p>
+<input class="box" id="codClave" type="number" min="1" max="99" placeholder="Tu código Clave" required>
+<img src="" alt="">
+<input class="box" id="txtCif" type="textarea" placeholder="Escribe tu consejo aqui" required>
+<button class='btn' type="submit" id="botonConsejo">Enviar</button>
 </div>
 
-<!-- Pantalla de opciones -->
-<div class="ventana4" id="descifMje" style="display: none">
-  <h2>¿Quieres ayudar </h2>
-  <p>fdfgdsg</p>
-  </div>
+<!-- Pantalla de Resultado del Cifrado -->
+<div class="ventana4" id="resultCif" style="display: none">
+  <h2>Codificando ecologicamente.....</h2>
+  <img src="" alt="">
+  <h3 id="nombre2"> Genial </h3>
+  <p>Tu consejo ha sido codificado exitosamente!!</p>
+ <p>Colocar aqui el consejo cifrado en un recuadro</p>
+  <img src="" alt="">
+  <p> <strong>La Pachamama</strong> está muy feliz !!!
+    <br> Tu mensaje promueve el <strong>"Desarrollo Sostenible"</strong> 
+    <br> de nuestro Planeta Tierra</p>
+  <button class='btn'type="button">Volver al Inicio</button>
+</div>
+
+<!-- Pantalla de Descifrar el Secreto -->
+<div class="ventana5" id="descifMje" style="display: none">
+  <h2 id="nombre2"> BienvenidX </h2>
+    <p>Descifra el secreto que cambiará a partir de hoy tu estilo de vida
+      <br>
+    Primero, debes colocar el código clave que te suministraron</p>
+    <img src="" alt="">
+    <input class="box" id="codClave" type="number" min="1" max="99" placeholder="Tu código Clave" required>
+    <img src="" alt="">
+    <input class="box" id="txtDescif" type="textarea" placeholder="Ingresa tu secreto aqui" required>
+    <button class='btn' type="submit" id="botonSecreto">Descifrar</button>
+</div>
+    
+<!-- Pantalla de Resultado del Descifrado -->
+<div class="ventana6" id="resultDescif" style="display: none">
+  <h2>Descifrando ambientalmente...</h2>  
+  <img src="" alt="">
+  <h3>A partir de hoy: </h3>
+  <p>Colocar aqui el consejo cifrado en un recuadro</p>
+  <img src="" alt="">
+  <h4>De esta manera, contribuyes con el cuidado del medio ambiente</h4>
+  <img src="" alt="">
+  <p>Recuerda,<strong><em>Sé ecoeficiente !!!</em></strong>
+    <br>
+    Es tu deber dejar una huella ecológica positiva
+    <br>  
+    La Pachamama estará muy agradecida con tu aporte</p>
+   <label for="volver">Animate a compartir tu consejo con otra persona!</label> 
+   <button class="btn" type="button">Volver al Inicio</button>
+</div>
 
     </main>
-    <footer><p> <em>(c) Todos los Derechos Reservados - Desarrollado por <strong>Rosly 2019</strong><br> <a href="mailto:yeniree17@gmail.com">Contáctanos</a></em></p></footer>
+    <footer><p> (c) Todos los Derechos Reservados - Desarrollado por <strong>Rosly 2019</strong>
+      <br> <a href="mailto:yeniree17@gmail.com">Contáctanos</a></p></footer>
     <script src="cipher.js"></script>
     <script src="index.js"></script>
   </body> 
