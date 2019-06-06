@@ -7,7 +7,6 @@ html {
 body {
     background-color: #9cff33;
     max-width: 1500px;
-   
 }
 header {
     padding: 100px 100px;
@@ -24,9 +23,10 @@ h1 {
     padding: 3px 3px 3px 7px;
     text-align: right;
     text-shadow: 2px 2px 2px orangered;
-    font-size: 40px;
+    font-size: 50px;
     font-family: 'Indie Flower', cursive;
 }
+
 .img1 {
     width: 40%;
     border: 1px solid #ccc;
@@ -73,10 +73,18 @@ button[type='submit']:hover{
     background: #4a88f4;
     cursor: pointer;
 }
+.btn {
+    background: rgb(243, 220, 10);
+    color: rgb(114, 104, 101);
+    border: none;
+    padding:10px;
+    margin: 60px;
+    font-size: 30px;
+    width: 30%;
+}
 
 footer{
     clear: both;
     text-align: center;
-    font-family: 'Gochi Hand', cursive;
     font-size: 15px;
 }
