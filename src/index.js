@@ -25,7 +25,7 @@ boton.addEventListener('click', (event) => {
         alert('Contraseña Incorrecta! Recuerda colocar la clave en mayúscula, al 3er intento fallido, ya no podras ingresar');
         intento++;
     }
-});
+}); 
 const boton2 = document.getElementById('darConsejo');
 boton2.addEventListener('click', () => {
     document.getElementById('opciones').style.display = 'none'; //oculto la seccion de opciones ventana2
@@ -47,6 +47,7 @@ const boton5 = document.getElementById('back1');
 boton5.addEventListener('click',() => {
 document.getElementById('resultCif').style.display= 'none';
 document.getElementById('inicio').style.display= 'block';
+document.getElementById('password').value='';
 });
 const boton6 = document.getElementById('botonSecreto');
 boton6.addEventListener('click', () => {
