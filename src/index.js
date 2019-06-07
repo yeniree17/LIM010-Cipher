@@ -1,3 +1,5 @@
+/*import { Cipher } from "crypto";
+
 /* Acá va tu código */
 const nombreUsuario = document.getElementById('nombre');
 const password = document.getElementById('password');
@@ -16,7 +18,7 @@ boton.addEventListener('click', (event) => {
     if (psw == clave) {
         document.getElementById('inicio').style.display = 'none'; //oculto la seccion de inicio ventana1
         document.getElementById('opciones').style.display = 'block'; //muestro la seccion de seleccionar metodo ventana2
-        document.getElementById('nombre2').innerHTML = "Hola " + nombre + "!";
+        document.getElementById('nombre2').innerHTML = 'Hola ${nombre}!';
     }
     else if (intento > 1) {
         alert('Ya utilizaste todos tus intentos, en estos momentos no podrás ingresar!');
@@ -26,6 +28,10 @@ boton.addEventListener('click', (event) => {
         intento++;
     }
 }); 
+
+/*const offset= document.getElementById('claveCif').value;
+const string= document.getElementById('textCif').value;*/
+
 const boton2 = document.getElementById('darConsejo');
 boton2.addEventListener('click', () => {
     document.getElementById('opciones').style.display = 'none'; //oculto la seccion de opciones ventana2
@@ -40,8 +46,15 @@ boton3.addEventListener('click', () => {
 });
 const boton4 = document.getElementById('botonConsejo');
 boton4.addEventListener('click', () => {
+    const offset= document.getElementById('claveCif').value;
+const string= document.getElementById('txtCif').value;
+let resultCif= document.getElementById("mjeCifrado");
+let mensaje=cipher.encode(offset.value, string.value);
+resultCif.innerHTML= (mensaje)
     document.getElementById('cifMje').style.display = 'none';
+   /* document.getElementById('resultCif').value = cipher.encode (offset.value, string.value);*/
     document.getElementById('resultCif').style.display = 'block';
+    
 });
 const boton5 = document.getElementById('back1');
 boton5.addEventListener('click',() => {

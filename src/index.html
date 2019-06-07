@@ -61,8 +61,10 @@
         que descifre tu mensaje <em>(debe tener sólo valores numéricos desde el 01 al 99)</em></p>
       <input class="box" id="claveCif" type="number" min="1" max="99" placeholder="Tu código Clave" required>
       <img src="" alt="">
-      <input class="box" id="txtCif" type="textarea" placeholder="Escribe tu consejo aqui" required>
+      <form action="">
+         <input class="box" id="txtCif" type="textarea" placeholder="Escribe tu consejo aqui" required>
       <button class='btn' type="button" id="botonConsejo">Enviar</button>
+      </form>
     </div>
 
     <!-- Pantalla de Resultado del Cifrado -->
@@ -71,7 +73,7 @@
       <img src="" alt="">
       <h3 id="nombre4"> Genial </h3>
       <p>Tu consejo ha sido codificado exitosamente!!</p>
-      <textarea name="mjeCifrado" id="" cols="100" rows="2"></textarea>
+      <textarea name="mjeCifrado" id="mjeCifrado" cols="100" rows="2"></textarea>
       <img src="" alt="">
       <p> <strong>La Pachamama</strong> está muy feliz !!!
         <br> Tu mensaje promueve el <strong>"Desarrollo Sostenible"</strong>
