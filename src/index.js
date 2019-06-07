@@ -10,6 +10,9 @@ boton.addEventListener('click', (event) => {
     event.preventDefault()
     const nombre = nombreUsuario.value;
     const psw = password.value;
+    /* if (nombre == ' ' && psw == ' '){
+        alert('Debe ingresar su nombre y contraseña para acceder');
+    }*/
     if (psw == clave) {
         document.getElementById('inicio').style.display = 'none'; //oculto la seccion de inicio ventana1
         document.getElementById('opciones').style.display = 'block'; //muestro la seccion de seleccionar metodo ventana2
@@ -30,25 +33,28 @@ boton2.addEventListener('click', () => {
 });
 const boton3 = document.getElementById('descifrarSecreto');
 boton3.addEventListener('click', () => {
-    document.getElementById('opciones').style.display= 'none';
-    document.getElementById('descifMje').style.display= 'block';
-    document.getElementById('nombre3').innerHTML = "BienvenidX " + nombre + "!";
+    const nombre1 = nombreUsuario.value;
+    document.getElementById('opciones').style.display = 'none';
+    document.getElementById('descifMje').style.display = 'block';
+    document.getElementById('nombre3').innerHTML = "BienvenidX " + nombre1 + "!";
 });
-
-
-/* botonNombre.addEventListener ('click', mostrarNombre ());
-/*=> {
-const nombre = nombreUsuario.value;
-});*/
-
-/* botonPassword.addEventListener ('click', () => {
-    const password = password.value;
-    }); */
-
-/*function mostrarNombre () {
-    const nombre= nombreUsuario.value;
-    document.getElementById('nombre2').innerHTML='Hola '+ nombre + ' !';
-    document.getElementById('inicio').style.display="none"; //Oculta la seccion de inicio
-    document.getElementById('opciones').style.display="block"; //Muestra la seccion de seleccionar metodo
-}*/
-
+const boton4 = document.getElementById('botonConsejo');
+boton4.addEventListener('click', () => {
+    document.getElementById('cifMje').style.display = 'none';
+    document.getElementById('resultCif').style.display = 'block';
+});
+const boton5 = document.getElementById('back1');
+boton5.addEventListener('click',() => {
+document.getElementById('resultCif').style.display= 'none';
+document.getElementById('inicio').style.display= 'block';
+});
+const boton6 = document.getElementById('botonSecreto');
+boton6.addEventListener('click', () => {
+    document.getElementById('descifMje').style.display = 'none';
+    document.getElementById('resultDescif').style.display = 'block';
+});
+const boton7 = document.getElementById('back2');
+boton7.addEventListener('click',() => {
+document.getElementById('resultDescif').style.display= 'none';
+document.getElementById('inicio').style.display= 'block';
+});

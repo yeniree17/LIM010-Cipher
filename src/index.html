@@ -12,23 +12,24 @@
 </head>
 
 <body>
-  <header>La Pachamama te aconseja</header>
+  <header>
+    <img src="https://user-images.githubusercontent.com/50186958/59078545-3dd71d00-88a5-11e9-9fd9-f688925481be.JPG"
+      alt="">
+  </header>
   <main>
     <!-- Pantalla de Bienvenida -->
     <div class="ventana1" id="inicio">
       <h1>... y te obsequia sus secretos</h1>
       <p>Primero ingresa tu nombre y la contraseña que te suministraron</p>
       <figure class="img1">
-        <img src="https://user-images.githubusercontent.com/50186958/58898496-59350300-86c0-11e9-8f9e-083fed5ea48f.PNG">
+        <img src="https://user-images.githubusercontent.com/50186958/59077436-37927200-88a0-11e9-91c7-46ccb1838bb7.png">
       </figure>
       <div class="formulario">
         <form action="">
           <label for="name"><strong>Ingresa tu nombre:</strong></label>
           <input class=box id="nombre" type="text" placeholder="Tu nombre" required>
-          <br><br>
           <label for="password"><strong>Ingresa tu contraseña:</strong></label>
           <input class=box id="password" type="password" placeholder="Contraseña en Mayúscula" required>
-          <br> <br>
           <button class='btn' type="submit" id="botonPassword">Ingresar</button>
         </form>
       </div>
@@ -38,8 +39,17 @@
     <div class="ventana2" id="opciones" style="display: none">
       <h2 id='nombre2'> Hola </h2>
       <p>Escoge una de estas opciones</p>
+      <div>
       <button class='btn' type="button" id="darConsejo">Regalar un Consejo</button>
       <button class='btn' type="button" id="descifrarSecreto">Descifrar Secreto</button>
+    </div>
+      <figure class='img2'>
+        <img src="https://user-images.githubusercontent.com/50186958/59080307-a924ed00-88ad-11e9-8a44-84949594f51b.png">
+      </figure>
+      <figure class="img2">
+        <img src="https://user-images.githubusercontent.com/50186958/59080352-dffb0300-88ad-11e9-9dd5-b6c2f4694c52.png">
+      </figure>
+
     </div>
 
     <!-- Pantalla de codificar el Consejo -->
@@ -59,21 +69,20 @@
     <div class="ventana4" id="resultCif" style="display: none">
       <h2>Codificando ecologicamente.....</h2>
       <img src="" alt="">
-      <h3 id="nombre2"> Genial </h3>
+      <h3 id="nombre4"> Genial </h3>
       <p>Tu consejo ha sido codificado exitosamente!!</p>
-      <textarea name="mjeCifrado" id="" cols="30" rows="10"></textarea>
+      <textarea name="mjeCifrado" id="" cols="100" rows="2"></textarea>
       <img src="" alt="">
       <p> <strong>La Pachamama</strong> está muy feliz !!!
         <br> Tu mensaje promueve el <strong>"Desarrollo Sostenible"</strong>
         <br> de nuestro Planeta Tierra</p>
-      <button class='btn' type="button">Volver al Inicio</button>
+      <button id='back1' class='btn' type="button" id=>Volver al Inicio</button>
     </div>
 
     <!-- Pantalla de Descifrar el Secreto -->
     <div class="ventana5" id="descifMje" style="display: none">
       <h2 id="nombre3"> </h2>
       <p>Descifra el secreto que cambiará a partir de hoy tu estilo de vida
-        <br>
         Primero, debes colocar el código clave que te suministraron</p>
       <img src="" alt="">
       <input class="box" id="claveDescif" type="number" min="1" max="99" placeholder="Tu código Clave" required>
@@ -87,7 +96,7 @@
       <h2>Descifrando ambientalmente...</h2>
       <img src="" alt="">
       <h3>A partir de hoy: </h3>
-      <textarea name="" id="mjeDescifrado" cols="30" rows="10"></textarea>
+      <textarea name="" id="mjeDescifrado" cols="100" rows="2"></textarea>
       <img src="" alt="">
       <h4>De esta manera, contribuyes con el cuidado del medio ambiente</h4>
       <img src="" alt="">
@@ -97,7 +106,7 @@
         <br>
         La Pachamama estará muy agradecida con tu aporte</p>
       <label for="volver">Animate a compartir tu consejo con otra persona!</label>
-      <button class="btn" type="button">Volver al Inicio</button>
+      <button id='back2' class="btn" type="button">Volver al Inicio</button>
     </div>
 
   </main>

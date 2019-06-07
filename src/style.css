@@ -9,41 +9,39 @@ body {
     max-width: 1500px;
 }
 header {
-    padding: 100px 100px;
-    padding-bottom: 150px;
-    background-image: url("https://user-images.githubusercontent.com/50186958/58895917-99918280-86ba-11e9-82f9-7868a4c775b8.jpg");
-    background-repeat: no-repeat;
-    background-size: 100vw 50vh;
-    opacity: 0.9;
-    font-size: 40px;
+    height: 150px;
     vertical-align: middle;
     text-align:center;
   }
 h1 {
+    margin: 20px;
     padding: 3px 3px 3px 7px;
     text-align: right;
     text-shadow: 2px 2px 2px orangered;
     font-size: 50px;
     font-family: 'Indie Flower', cursive;
 }
+p{
+    display: block;
+    margin:0px;
+}
 
 .img1 {
     width: 40%;
     border: 1px solid #ccc;
     margin: 20px 40px;
-    padding: 20px;
     float: left;
 }
 
 .formulario {
-    width: 40%;
+    width: 50%;
     border: 1px solid #ccc;
-    margin: 20px 40px;
-    padding: 20px;
+    margin-top: 20px;
+    margin-left: 40px;
     display: inline-block;
     color: darkblue;
     font-size: 20px;
-    text-align: left;
+    
     vertical-align: middle;
 }
 
@@ -65,7 +63,7 @@ button[type='submit']{
     color: #fff;
     font-size: 15px;
     border: none;
-    margin-bottom: 20px;
+    margin: 20px;
     width: 30%;
     padding: 10px;
 }
@@ -78,11 +76,18 @@ button[type='submit']:hover{
     color: rgb(114, 104, 101);
     border: none;
     padding:10px;
-    margin: 60px;
+    margin:20px;
     font-size: 30px;
     width: 30%;
+    border-radius: 20px;
 }
-
+.img2 {
+    width: 30%;
+    border: 1px solid #ccc;
+    margin-left: 20px;
+    padding-left: 30px;
+    display:inline-flex;
+}
 footer{
     clear: both;
     text-align: center;
