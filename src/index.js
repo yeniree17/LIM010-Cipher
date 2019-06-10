@@ -1,7 +1,7 @@
 /*Login del Usuario*/
 const nombreUsuario = document.getElementById("nombre");
 const password = document.getElementById("password");
-const clave = 1;
+const clave = 'uno';
 /*'laboratoria'.toUpperCase();*/
 const boton = document.getElementById("botonPassword");
 let intento = 0;
@@ -10,13 +10,15 @@ boton.addEventListener("click", (event) => {
     event.preventDefault()
     const nombre = nombreUsuario.value;
     const psw = password.value;
+    
     /* if (nombre == ' ' && psw == ' '){
         alert('Debe ingresar su nombre y contraseña para acceder');
     }*/
-    if (psw == clave) {
+    if (psw === clave) {
         document.getElementById("inicio").style.display = 'none'; //oculto la seccion de inicio ventana1
         document.getElementById("opciones").style.display = 'block'; //muestro la seccion de seleccionar metodo ventana2
         document.getElementById("nombre2").innerHTML = `Hola ${nombre}!`;
+        intento=0;
     }
     else if (intento > 1) {
         const alertFinal= "Ya utilizaste todos tus intentos, en estos momentos no podrás ingresar!";
@@ -60,7 +62,9 @@ const boton5 = document.getElementById("back1");
 boton5.addEventListener("click", () => {
     document.getElementById("resultCif").style.display = 'none';
     document.getElementById("inicio").style.display = 'block';
-    document.getElementById("password").value = '';
+    document.getElementById("nombre").value = "";
+    document.getElementById("password").value = "";
+    document.getElementById("error").innerHTML= "";
 });
 /*Ejecuta el metodo descifrado ventana 5 y accede a resultadoDescif ventana 6*/
 const boton6 = document.getElementById("botonSecreto");
@@ -78,6 +82,7 @@ const boton7 = document.getElementById("back2");
 boton7.addEventListener("click", () => {
     document.getElementById("resultDescif").style.display = 'none';
     document.getElementById("inicio").style.display = 'block';
-    document.getElementById("nombre").value = " ";
-    document.getElementById("password").value = " ";
+    document.getElementById("nombre").value = "";
+    document.getElementById("password").value = "";
+    document.getElementById("error").innerHTML= "";
 });
