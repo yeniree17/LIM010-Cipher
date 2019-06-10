@@ -13,102 +13,111 @@
 
 <body>
   <header>
-    <img src="https://user-images.githubusercontent.com/50186958/59078545-3dd71d00-88a5-11e9-9fd9-f688925481be.JPG"
+    <img src="https://user-images.githubusercontent.com/50186958/59153857-06de4400-8a2a-11e9-8db1-64b0f2037716.png"
       alt="">
   </header>
   <main>
     <!-- Pantalla de Bienvenida -->
-    <div class="ventana1" id="inicio">
+    <section class="ventana1" id="inicio">
       <h1>... y te obsequia sus secretos</h1>
       <p>Primero ingresa tu nombre y la contraseña que te suministraron</p>
       <figure class="img1">
         <img src="https://user-images.githubusercontent.com/50186958/59077436-37927200-88a0-11e9-91c7-46ccb1838bb7.png">
       </figure>
-      <div class="formulario">
-        <form action="">
-          <label for="name"><strong>Ingresa tu nombre:</strong></label>
-          <input class=box id="nombre" type="text" placeholder="Tu nombre" required>
-          <label for="password"><strong>Ingresa tu contraseña:</strong></label>
-          <input class=box id="password" type="password" placeholder="Contraseña en Mayúscula" required>
-          <button class='btn' type="submit" id="botonPassword">Ingresar</button>
-        </form>
-      </div>
-    </div>
-
+      <form class="formulario">
+        <label for="name"><strong>Ingresa tu nombre:</strong></label>
+        <input class="box" id="nombre" type="text" placeholder="Tu nombre" required>
+        <label for="password"><strong>Ingresa tu contraseña:</strong></label>
+        <input class="box" id="password" type="password" placeholder="Contraseña en Mayúscula" required>
+        <h4 class="alerta" id="error"> </h4>
+        <br>
+        <button class="btn" type="submit" id="botonPassword">Ingresar</button>
+      </form>
+    </section>
     <!-- Pantalla de opciones -->
-    <div class="ventana2" id="opciones" style="display: none">
-      <h2 id='nombre2'> Hola </h2>
+    <section class="ventana2 hide" id="opciones" style="display: none">
+      <h2 id="nombre2"></h2>
       <p>Escoge una de estas opciones</p>
-      <div>
-      <button class='btn' type="button" id="darConsejo">Regalar un Consejo</button>
-      <button class='btn' type="button" id="descifrarSecreto">Descifrar Secreto</button>
-    </div>
-      <figure class='img2'>
+      <form class="formulario2">
+        <button class="btn" type="button" id="darConsejo">Regalar un Consejo</button>
+        <button class="btn" type="button" id="descifrarSecreto">Descifrar Secreto</button>
+      </form>
+      <figure class="img2">
         <img src="https://user-images.githubusercontent.com/50186958/59080307-a924ed00-88ad-11e9-8a44-84949594f51b.png">
       </figure>
-      <figure class="img2">
+      <figure class="img3">
         <img src="https://user-images.githubusercontent.com/50186958/59080352-dffb0300-88ad-11e9-9dd5-b6c2f4694c52.png">
       </figure>
-
-    </div>
-
+    </section>
     <!-- Pantalla de codificar el Consejo -->
-    <div class="ventana3" id="cifMje" style="display: none">
+    <section class="ventana3 hide" id="cifMje" style="display: none">
       <h2>¿Quieres ayudar a nuestra tierra a crear consciencia ambiental?</h2>
-      <p>Te invitamos a compartir con tus amigos de forma divertida tus buenas prácticas ambientales</p>
-      <img src="" alt="">
-      <p>Primero, debes crear un <strong><em>Código Clave</em></strong> que será utilizado por la persona <br>
+      <p class="mje1">Te invitamos a compartir con tus amigos de forma divertida tus buenas prácticas ambientales
+        <br><br>
+        Primero, debes crear un <strong><em>Código Clave</em></strong> que será utilizado por la persona <br>
         que descifre tu mensaje <em>(debe tener sólo valores numéricos desde el 01 al 99)</em></p>
-      <input class="box" id="claveCif" type="number" min="1" max="99" placeholder="Tu código Clave" required>
-      <img src="" alt="">
-      <input class="box" id="txtCif" type="textarea" placeholder="Escribe tu consejo aqui" required>
-      <button class='btn' type="button" id="botonConsejo">Enviar</button>
-    </div>
-
+      <img class="img4"
+        src="https://user-images.githubusercontent.com/50186958/59167120-3443f400-8af5-11e9-8475-c57a2dcf8358.png">
+      <img class="img4"
+        src="https://user-images.githubusercontent.com/50186958/59168747-bbe13100-8afc-11e9-8722-42b22cd1ebff.png">
+      <form class="formulario1">
+        <input class="box" id="claveCif" type="number" min="1" max="99" placeholder="Tu código Clave" required>
+        <input class="box" id="txtCif" type="textarea" placeholder="Escribe tu consejo aqui" required>
+        <button class="btn" type="button" id="botonConsejo">Enviar</button>
+      </form>
+    </section>
     <!-- Pantalla de Resultado del Cifrado -->
-    <div class="ventana4" id="resultCif" style="display: none">
-      <h2>Codificando ecologicamente.....</h2>
-      <img src="" alt="">
+    <section class="ventana4 hide" id="resultCif" style="display: none">
+      <h2>Codificando ecologicamente....</h2>
       <h3 id="nombre4"> Genial </h3>
+      <img class="img5"
+        src="https://user-images.githubusercontent.com/50186958/59169734-111f4180-8b01-11e9-8a65-f211acb14fce.png">
       <p>Tu consejo ha sido codificado exitosamente!!</p>
-      <textarea name="mjeCifrado" id="" cols="100" rows="2"></textarea>
-      <img src="" alt="">
+      <img class="img4"
+        src="https://user-images.githubusercontent.com/50186958/59169981-2183ec00-8b02-11e9-8cd6-081f41e755d2.png">
+      <textarea class="box" id="mjeCifrado" cols="50" rows="1"></textarea>
       <p> <strong>La Pachamama</strong> está muy feliz !!!
-        <br> Tu mensaje promueve el <strong>"Desarrollo Sostenible"</strong>
+        <br> Tu mensaje promueve el <strong class="resaltar">"Desarrollo Sostenible"</strong>
         <br> de nuestro Planeta Tierra</p>
-      <button id='back1' class='btn' type="button" id=>Volver al Inicio</button>
-    </div>
-
+      <button id="back1" class="btn" type="button">Volver al Inicio</button>
+    </section>
     <!-- Pantalla de Descifrar el Secreto -->
-    <div class="ventana5" id="descifMje" style="display: none">
+    <section class="ventana5 hide" id="descifMje" style="display: none">
       <h2 id="nombre3"> </h2>
-      <p>Descifra el secreto que cambiará a partir de hoy tu estilo de vida
+      <p class="mje1"> <br> Descifra el secreto que cambiará a partir de hoy tu estilo de vida
         Primero, debes colocar el código clave que te suministraron</p>
-      <img src="" alt="">
-      <input class="box" id="claveDescif" type="number" min="1" max="99" placeholder="Tu código Clave" required>
-      <img src="" alt="">
-      <input class="box" id="txtDescif" type="textarea" placeholder="Ingresa tu secreto aqui" required>
-      <button class='btn' type="button" id="botonSecreto">Descifrar</button>
-    </div>
-
+      <img class="img4"
+        src="https://user-images.githubusercontent.com/50186958/59173301-eab5d200-8b11-11e9-85b5-e3d91efb864a.png"
+        alt="">
+      <img class="img4"
+        src="https://user-images.githubusercontent.com/50186958/59173590-200eef80-8b13-11e9-8c0c-b86431723759.png"
+        alt="">
+      <form class="formulario1">
+        <input class="box" id="claveDescif" type="number" min="1" max="99" placeholder="Tu código Clave" required>
+        <textarea class="box" id="txtDescif" cols="50" rows="1" placeholder="Ingresa tu secreto aqui"></textarea>
+        <button class="btn" type="button" id="botonSecreto">Descifrar</button>
+      </form>
+    </section>
     <!-- Pantalla de Resultado del Descifrado -->
-    <div class="ventana6" id="resultDescif" style="display: none">
+    <section class="ventana6 hide" id="resultDescif" style="display: none">
       <h2>Descifrando ambientalmente...</h2>
-      <img src="" alt="">
       <h3>A partir de hoy: </h3>
-      <textarea name="" id="mjeDescifrado" cols="100" rows="2"></textarea>
-      <img src="" alt="">
-      <h4>De esta manera, contribuyes con el cuidado del medio ambiente</h4>
-      <img src="" alt="">
-      <p>Recuerda,<strong><em>Sé ecoeficiente !!!</em></strong>
-        <br>
+      <img class="img6"
+        src="https://user-images.githubusercontent.com/50186958/59174000-11c1d300-8b15-11e9-905f-8026e9b7069f.png"
+        alt="">
+      <textarea class="box1" id="mjeDescifrado" cols="50" rows="1"></textarea>
+      <p><strong>De esta manera, contribuyes con el cuidado del medio ambiente</strong></p>
+      <img class="img4"
+        src="https://user-images.githubusercontent.com/50186958/59174015-23a37600-8b15-11e9-9da0-78c72e00545d.png"
+        alt="">
+      <p><br> Recuerda, <strong class="resaltar"><em>Sé ecoeficiente !!!</em></strong>
         Es tu deber dejar una huella ecológica positiva
-        <br>
-        La Pachamama estará muy agradecida con tu aporte</p>
-      <label for="volver">Animate a compartir tu consejo con otra persona!</label>
-      <button id='back2' class="btn" type="button">Volver al Inicio</button>
-    </div>
-
+        <br>La Pachamama estará muy agradecida con tu aporte</p>
+      <form class="formulario3">
+        <label for="volver">Animate a compartir tu consejo con otra persona!</label>
+        <button id="back2" class="btn" type="button">Volver al Inicio</button>
+      </form>
+    </section>
   </main>
   <footer>
     <p> (c) Todos los Derechos Reservados - Desarrollado por <strong>Rosly 2019</strong>

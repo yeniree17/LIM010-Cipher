@@ -1,31 +1,34 @@
-/* Acá va tu código que cifra*/
-const offset= parseInt(document.getElementById('claveCif').value);
-const string= document.getElementById('textCif').value;
+/* Acá va tu código de cifrado */
 window.cipher = {
   encode: (offset, string) => {
-  let resulCif = '';
-    for(let i=0; i<string.length; i++)
-    let asciiNum= (i.charCodeAt(0)-65 + offset) % 26 + 65;
-      if (asciiNum>=65 && asciiNum<=90){
-        resulCif += string.fromCharCode(asciiNum)
-      } 
-    } return resulCif;
-
+    let mensajeCifrado = " ";
+    let position = 0;
+    for (let i = 0; i < string.length; i++) {
+      if (string.charCodeAt(i) === 32) {
+        position = string.charCodeAt(i);
+      }
+      else {
+        position = (string.toUpperCase().charCodeAt(i) - 65 + parseInt(offset)) % 26 + 65;
+      }
+      let mensajeCode = String.fromCharCode(position);
+      mensajeCifrado += mensajeCode;
+    }
+    return mensajeCifrado;
   },
-  
-  /*decode: (offset, string) => {
-    Acá va tu código que descifra}*/
-
-const offset= document.getElementById('claveDescif');
-const string= document.getElementById('')
-window.cipher = {
-  decode: (offset, string) => {
-  let resulDescif = '';
-    for(let i=0; i<string.length; i++)
-    let asciiNum= (i.charCodeAt(0)-65 + offset) % 26 - 65;
-      if (asciiNum>=65 && asciiNum<=90){
-        resulDescif += string.fromCharCode(asciiNum)
-      } 
-    } return resulDesCif;
-
-  };
+  /*Aca va tu codigo de descifrado*/
+  decode: (offset1, string1) => {
+    let mensajeDescifrado = " ";
+    let position1 = 0;
+    for (let i = 0; i < string1.length; i++){
+      if (string1.charCodeAt(i) === 32){
+position1 = string1.charCodeAt(i);
+      }
+    else {
+      position1= (string1.toUpperCase().charCodeAt(i)- 90 - parseInt(offset1)) % 26 + 90;
+    }
+  let mensajeDecode = String.fromCharCode(position1);
+    mensajeDescifrado += mensajeDecode;
+    } 
+    return mensajeDescifrado;
+    }
+};

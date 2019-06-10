@@ -1,57 +1,79 @@
 /* Acá van tus reglas de estilo */
 html {
     box-sizing: border-box;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 body {
     background-color: #9cff33;
-    max-width: 1500px;
+    max-width: 1200px;
 }
 header {
+    width: 1000px;
     height: 150px;
-    vertical-align: middle;
-    text-align:center;
+    margin-left: 30px;
   }
 h1 {
-    margin: 20px;
-    padding: 3px 3px 3px 7px;
+    width: 100%;
+    margin: 0px;
+    margin-left: 60px;
     text-align: right;
-    text-shadow: 2px 2px 2px orangered;
-    font-size: 50px;
     font-family: 'Indie Flower', cursive;
+    text-shadow: 2px 2px 2px orangered;
+    font-size: 35px;
 }
 p{
     display: block;
     margin:0px;
+    text-align: center;
 }
-
+h2{
+    margin-left: 60px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+}
+h3{
+    display: inline-block;
+    float: left;
+    margin-right: 400px;
+    margin-left: 50px;
+    margin-bottom: 0px;
+}
 .img1 {
-    width: 40%;
+    width: 500px;
+    height: 280px;
     border: 1px solid #ccc;
-    margin: 20px 40px;
+    margin: 0px;
+    margin-left: 40px;
     float: left;
 }
 
 .formulario {
-    width: 50%;
+    width: 500px;
+    height: 280px;
     border: 1px solid #ccc;
-    margin-top: 20px;
-    margin-left: 40px;
+    margin-left: 60px;
+    padding-left: 50px;
     display: inline-block;
     color: darkblue;
     font-size: 20px;
-    
     vertical-align: middle;
+}
+.alerta{
+  margin:0px;
+font-size: 20px; 
+  color: red;
+  display: inline-flex;
+  text-align: left;
 }
 
 label{
     display: block;
     width: 100%;
-    margin-bottom: 20px;
+    margin: 10px;
 }
 .box{
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     width: 60%;
     padding: 10px;
 }
@@ -76,20 +98,95 @@ button[type='submit']:hover{
     color: rgb(114, 104, 101);
     border: none;
     padding:10px;
-    margin:20px;
-    font-size: 30px;
+    margin-top: 20px;
+    margin:10px;
+    font-size: 20px;
     width: 30%;
     border-radius: 20px;
 }
 .img2 {
-    width: 30%;
+    width: 250px;
+    height: 220px;
     border: 1px solid #ccc;
-    margin-left: 20px;
-    padding-left: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 300px;
     display:inline-flex;
+    padding: 0px;
+}
+.img3 {
+    width: 250px;
+    height: 220px;
+    border: 1px solid #ccc;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 20px;
+    display:inline-flex;
+    padding: 0px;
+}
+.formulario2{
+    width: 1000px;
+    height: 60px;
+    border: 1px solid #ccc;
+    margin-left: 60px;
+    padding-left: 200px;
+    display: inline-block;
+}
+.mje1{
+    width:800px;
+    margin-left: 40px;
+    float:left;
+}
+.img4 {
+    width: 250px;
+    height: 150px;
+    border: 1px solid #ccc;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    margin-left: 50px;
+    float: left;
+    padding: 0px;
+}
+.img5 {
+    width: 400px;
+    height: 80px;
+    border: 1px solid #ccc;
+}
+.img6 {
+    width: 250px;
+    height: 150px;
+    border: 1px solid #ccc;
+    display: inline-block;
+    float: right;
+}
+.box1{
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 200px;
+    margin-right: 0px;
+    width: 50%;
+    padding: 10px;
+}
+.formulario3{
+    width: 800px;
+    height: 80px;
+    border: 1px solid #ccc;
+    margin-left: 60px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    display: inline-flex;
+}
+.resaltar {
+    color: darkblue;
 }
 footer{
     clear: both;
-    text-align: center;
+    padding-top: 40px;
     font-size: 15px;
+    text-align:center;
+}
+.hide {
+    display: none;
 }
