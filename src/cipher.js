@@ -1,7 +1,7 @@
 /* Acá va tu código de cifrado */
 window.cipher = {
   encode: (offset, string) => {
-    let mensajeCifrado = " ";
+    let mensajeCifrado = "";
     let position = 0;
     for (let i = 0; i < string.length; i++) {
       if (string.charCodeAt(i) === 32) {
@@ -17,7 +17,7 @@ window.cipher = {
   },
   /*Aca va tu codigo de descifrado*/
   decode: (offset1, string1) => {
-    let mensajeDescifrado = " ";
+    let mensajeDescifrado = "";
     let position1 = 0;
     for (let i = 0; i < string1.length; i++){
       if (string1.charCodeAt(i) === 32){
