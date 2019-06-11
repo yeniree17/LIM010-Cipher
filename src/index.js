@@ -34,8 +34,8 @@ boton.addEventListener("click", (event) => {
 /*Acceder al metodo de cifrado ventana 3 cuando el usuario escoge DarConsejo*/
 const boton2 = document.getElementById("darConsejo");
 boton2.addEventListener("click", () => {
-    ventana2 = document.getElementById("opciones");
-    ventana3 = document.getElementById("cifMje");
+const ventana2 = document.getElementById("opciones");
+const ventana3 = document.getElementById("cifMje");
     ventana2.classList.add("hide"); //oculto la seccion de opciones ventana2
     ventana3.classList.remove("hide"); //muestro la seccion de cifrado
 });
