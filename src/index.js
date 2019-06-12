@@ -77,8 +77,13 @@ boton6.addEventListener("click", () => {
     ventana6.classList.remove("hide");//muestra el resultado de descifrar
     const offset1 = document.getElementById("claveDescif");
     const string1 = document.getElementById("txtDescif");
+    if (string1.value == "") {
+        string1.focus();
+    }
+    else { 
     const mjeDescifrado = document.getElementById("mjeDescifrado");
     mjeDescifrado.innerHTML = cipher.decode(offset1.value, string1.value);
+    }
 });
 /*Para retornar al pagina de Inicio luego de descifrar*/
 const boton7 = document.getElementById("back2");
