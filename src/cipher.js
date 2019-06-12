@@ -10,8 +10,7 @@ window.cipher = {
       else {
         position = (string.toUpperCase().charCodeAt(i) - 65 + parseInt(offset)) % 26 + 65;
       }
-      let mensajeCode = String.fromCharCode(position);
-      mensajeCifrado += mensajeCode;
+      mensajeCifrado += String.fromCharCode(position);
     }
     return mensajeCifrado;
   },
@@ -26,8 +25,7 @@ position1 = string1.charCodeAt(i);
     else {
       position1= (string1.toUpperCase().charCodeAt(i)- 90 - parseInt(offset1)) % 26 + 90;
     }
-  let mensajeDecode = String.fromCharCode(position1);
-    mensajeDescifrado += mensajeDecode;
+    mensajeDescifrado += String.fromCharCode(position1);
     } 
     return mensajeDescifrado;
     }
