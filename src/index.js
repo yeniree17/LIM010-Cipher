@@ -53,10 +53,10 @@ boton4.addEventListener("click", () => {
     const nombre2 = nombreUsuario.value;
     ventana3.classList.add("hide");//oculta la opcion de cifrado
     ventana4.classList.remove("hide");//muestra el resultado de cifrado
-    let offset = document.getElementById("claveCif");
-    let string = document.getElementById("txtCif");
+    let offset = document.getElementById("claveCif").value;
+    let string = document.getElementById("txtCif").value;
     const mjeCifrado = document.getElementById("mjeCifrado");
-    mjeCifrado.innerHTML = cipher.encode(offset.value, string.value);
+    mjeCifrado.innerHTML = cipher.encode(offset, string);
     document.getElementById("nombre4").innerHTML = `Genial ${nombre2}!`;
 });
 /*Para retornar al pagina de Inicio luego de codificar*/
@@ -75,14 +75,19 @@ const boton6 = document.getElementById("botonSecreto");
 boton6.addEventListener("click", () => {
     ventana5.classList.add("hide");//luego de ejecutar el descifrado
     ventana6.classList.remove("hide");//muestra el resultado de descifrar
-    const offset1 = document.getElementById("claveDescif");
-    const string1 = document.getElementById("txtDescif");
-    if (string1.value == "") {
-        string1.focus();
+    const offset1 = document.getElementById("claveDescif").value;
+    const string1 = document.getElementById("txtDescif").value;
+    if (string1 === "" || offset1 === "") {
+        alert("Debes completar el campo");
+        document.getElementById("txtDescif").value= " ";
+        document.getElementById("txtDescif").focus();
+        return document.getElementById("descifMje");
+        
+        //document.getElementById("required1").innerHTML = "Completa el campo"
     }
     else { 
     const mjeDescifrado = document.getElementById("mjeDescifrado");
-    mjeDescifrado.innerHTML = cipher.decode(offset1.value, string1.value);
+    mjeDescifrado.innerHTML = cipher.decode(offset1, string1);
     }
 });
 /*Para retornar al pagina de Inicio luego de descifrar*/
