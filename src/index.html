@@ -20,16 +20,16 @@
     <!-- Pantalla de Bienvenida -->
     <section class="ventana1" id="inicio">
       <h1>... y te obsequia sus secretos</h1>
-      <p>Primero ingresa tu nombre y la contraseña que te suministraron</p>
+      <p class="mje">Primero ingresa tu nombre y la contraseña que te suministraron</p>
       <figure class="img1">
-        <img src="https://user-images.githubusercontent.com/50186958/59077436-37927200-88a0-11e9-91c7-46ccb1838bb7.png">
+        <img src="https://user-images.githubusercontent.com/50186958/59077436-37927200-88a0-11e9-91c7-46ccb1838bb7.png" alt="green-brain">
       </figure>
       <form class="formulario">
         <label for="name"><strong>Ingresa tu nombre:</strong></label>
         <input class="box" id="nombre" type="text" placeholder="Tu nombre" required>
         <label for="password"><strong>Ingresa tu contraseña:</strong></label>
-        <input class="box" id="password" type="password" placeholder="Contraseña en Mayúscula" required>
-        <h4 class="alerta" id="error"> </h4>
+        <input class="box" id="password" type="password" placeholder="&#128272| Contraseña en Mayúscula" required>
+        <h4 class="alerta" id="error"></h4>
         <br>
         <button class="btn" type="submit" id="botonPassword">Ingresar</button>
       </form>
@@ -37,16 +37,16 @@
     <!-- Pantalla de opciones -->
     <section class="ventana2 hide" id="opciones">
       <h2 id="nombre2"></h2>
-      <p>Escoge una de estas opciones</p>
+      <p class="mje">Escoge una de estas opciones</p>
       <form class="formulario2">
         <button class="btn" type="button" id="darConsejo">Regalar un Consejo</button>
         <button class="btn" type="button" id="descifrarSecreto">Descifrar Secreto</button>
       </form>
       <figure class="img2">
-        <img src="https://user-images.githubusercontent.com/50186958/59080307-a924ed00-88ad-11e9-8a44-84949594f51b.png">
+        <img src="https://user-images.githubusercontent.com/50186958/59080307-a924ed00-88ad-11e9-8a44-84949594f51b.png" alt="consejo">
       </figure>
       <figure class="img3">
-        <img src="https://user-images.githubusercontent.com/50186958/59080352-dffb0300-88ad-11e9-9dd5-b6c2f4694c52.png">
+        <img src="https://user-images.githubusercontent.com/50186958/59080352-dffb0300-88ad-11e9-9dd5-b6c2f4694c52.png" alt="secreto">
       </figure>
     </section>
     <!-- Pantalla de codificar el Consejo -->
@@ -57,12 +57,13 @@
         Primero, debes crear un <strong><em>Código Clave</em></strong> que será utilizado por la persona <br>
         que descifre tu mensaje <em>(debe tener sólo valores numéricos desde el 01 al 99)</em></p>
       <img class="img4"
-        src="https://user-images.githubusercontent.com/50186958/59167120-3443f400-8af5-11e9-8475-c57a2dcf8358.png">
+        src="https://user-images.githubusercontent.com/50186958/59167120-3443f400-8af5-11e9-8475-c57a2dcf8358.png" alt="amb1">
       <img class="img4"
-        src="https://user-images.githubusercontent.com/50186958/59168747-bbe13100-8afc-11e9-8722-42b22cd1ebff.png">
+        src="https://user-images.githubusercontent.com/50186958/59168747-bbe13100-8afc-11e9-8722-42b22cd1ebff.png" alt="amb2">
       <form class="formulario1">
         <input class="box" id="claveCif" type="number" min="1" max="99" placeholder="Tu código Clave" required>
-        <input class="box" id="txtCif" type="textarea" placeholder="Escribe tu consejo aqui" required>
+        <input class="box" id="txtCif" type="text" placeholder="Escribe tu consejo aqui" required>
+        <h4 class="alerta" id="required"></h4>
         <button class="btn" type="button" id="botonConsejo">Enviar</button>
       </form>
     </section>
@@ -71,10 +72,10 @@
       <h2>Codificando ecologicamente....</h2>
       <h3 id="nombre4"> Genial </h3>
       <img class="img5"
-        src="https://user-images.githubusercontent.com/50186958/59169734-111f4180-8b01-11e9-8a65-f211acb14fce.png">
+        src="https://user-images.githubusercontent.com/50186958/59169734-111f4180-8b01-11e9-8a65-f211acb14fce.png" alt="amb3">
       <p>Tu consejo ha sido codificado exitosamente!!</p>
       <img class="img4"
-        src="https://user-images.githubusercontent.com/50186958/59169981-2183ec00-8b02-11e9-8cd6-081f41e755d2.png">
+        src="https://user-images.githubusercontent.com/50186958/59169981-2183ec00-8b02-11e9-8cd6-081f41e755d2.png"alt="amb4">
       <textarea class="box1" id="mjeCifrado" cols="50" rows="1"></textarea>
       <p> <strong>La Pachamama</strong> está muy feliz !!!
         <br> Tu mensaje promueve el <strong class="resaltar">"Desarrollo Sostenible"</strong>
@@ -94,7 +95,7 @@
         alt="">
       <form class="formulario1">
         <input class="box" id="claveDescif" type="number" min="1" max="99" placeholder="Tu código Clave" required>
-        <textarea class="box" id="txtDescif" cols="50" rows="1" placeholder="Ingresa tu secreto aqui"></textarea>
+        <input class="box" id="txtDescif" type="text" placeholder="Ingresa tu secreto aqui" required>
         <h4 class="alerta" id="required1"></h4>
         <button class="btn" type="button" id="botonSecreto">Descifrar</button>
       </form>
@@ -121,7 +122,7 @@
     </section>
   </main>
   <footer>
-    <p> (c) Todos los Derechos Reservados - Desarrollado por <strong>Rosly 2019</strong>
+    <p class="mje"> (c) Todos los Derechos Reservados - Desarrollado por <strong>Rosly 2019</strong>
       <br> <a href="mailto:yeniree17@gmail.com">Contáctanos</a></p>
   </footer>
   <script src="cipher.js"></script>

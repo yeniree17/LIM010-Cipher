@@ -1,8 +1,7 @@
 /*Login del Usuario*/
 const nombreUsuario = document.getElementById("nombre");
 const password = document.getElementById("password");
-const clave = 'uno';
-/*'laboratoria'.toUpperCase();*/
+const clave = "laboratoria".toUpperCase();
 const boton = document.getElementById("botonPassword");
 let intento = 0;
 const ventana1 = document.getElementById("inicio");
@@ -51,13 +50,21 @@ boton3.addEventListener("click", () => {
 const boton4 = document.getElementById("botonConsejo");
 boton4.addEventListener("click", () => {
     const nombre2 = nombreUsuario.value;
-    ventana3.classList.add("hide");//oculta la opcion de cifrado
-    ventana4.classList.remove("hide");//muestra el resultado de cifrado
     let offset = document.getElementById("claveCif").value;
     let string = document.getElementById("txtCif").value;
-    const mjeCifrado = document.getElementById("mjeCifrado");
+    if (string === "" || offset === ""){
+        document.getElementById("claveCif").focus();
+        document.getElementById("txtCif").focus();
+        document.getElementById("required").innerHTML = "Debes completa los campos"
+    }
+    else {
+    const mjeCifrado = document.getElementById("mjeCifrado");  
+    ventana3.classList.add("hide");//oculta la opcion de cifrado
+    ventana4.classList.remove("hide");//muestra el resultado de cifrado  
     mjeCifrado.innerHTML = cipher.encode(offset, string);
     document.getElementById("nombre4").innerHTML = `Genial ${nombre2}!`;
+    document.getElementById("required").innerHTML = "";
+    }
 });
 /*Para retornar al pagina de Inicio luego de codificar*/
 const boton5 = document.getElementById("back1");
@@ -73,21 +80,19 @@ boton5.addEventListener("click", () => {
 /*Ejecuta el metodo descifrado ventana 5 y accede a resultadoDescif ventana 6*/
 const boton6 = document.getElementById("botonSecreto");
 boton6.addEventListener("click", () => {
-    ventana5.classList.add("hide");//luego de ejecutar el descifrado
-    ventana6.classList.remove("hide");//muestra el resultado de descifrar
     const offset1 = document.getElementById("claveDescif").value;
     const string1 = document.getElementById("txtDescif").value;
     if (string1 === "" || offset1 === "") {
-        alert("Debes completar el campo");
-        document.getElementById("txtDescif").value= " ";
+        document.getElementById("claveDescif").focus();
         document.getElementById("txtDescif").focus();
-        return document.getElementById("descifMje");
-        
-        //document.getElementById("required1").innerHTML = "Completa el campo"
+        document.getElementById("required1").innerHTML = "Debes completa los campos"
     }
     else { 
     const mjeDescifrado = document.getElementById("mjeDescifrado");
     mjeDescifrado.innerHTML = cipher.decode(offset1, string1);
+    ventana5.classList.add("hide");//luego de ejecutar el descifrado
+    ventana6.classList.remove("hide");//muestra el resultado de descifrar
+    document.getElementById("required1").innerHTML = "";
     }
 });
 /*Para retornar al pagina de Inicio luego de descifrar*/

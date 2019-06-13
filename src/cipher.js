@@ -2,7 +2,8 @@
 window.cipher = {
   encode: (offset, string) => {
     let mensajeCifrado = "";
-    let position = 0;
+    let position = 0; //ubicacion de cada letra
+    // Para recorrer cada letra del txt ingresado
     for (let i = 0; i < string.length; i++) {
       if (string.charCodeAt(i) >= 65 && string.charCodeAt(i) <= 90) {
         position = (string.charCodeAt(i) - 65 + parseInt(offset)) % 26 + 65;

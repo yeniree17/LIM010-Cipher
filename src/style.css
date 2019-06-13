@@ -37,6 +37,11 @@ h3{
     margin-left: 50px;
     margin-bottom: 0px;
 }
+.mje{
+    width:1000px;
+    text-align: center;
+    padding-left: 150px;
+}
 .img1 {
     width: 500px;
     height: 280px;
@@ -113,6 +118,7 @@ button[type='button']:hover{
     margin-left: 300px;
     display:inline-flex;
     padding: 0px;
+    padding-left: 100px;
 }    
 .img3 {
     width: 250px;
@@ -126,7 +132,7 @@ button[type='button']:hover{
 .formulario2{
     width: 1000px;
     height: 60px;
-    margin-left: 60px;
+    margin-left: 150px;
     padding-left: 200px;
     display: inline-block;
 }
