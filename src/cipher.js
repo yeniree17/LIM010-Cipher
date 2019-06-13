@@ -22,6 +22,7 @@ window.cipher = {
   decode: (offset1, string1) => {
     let mensajeDescifrado = "";
     let position1 = 0;
+    //para recorrer cada letra del txt a descifrar
     for (let i = 0; i < string1.length; i++) {
 if (string1.charCodeAt(i) >= 65 && string1.charCodeAt(i) <= 90) {
   position1 = (string1.charCodeAt(i) - 90 - parseInt(offset1)) % 26 + 90;
