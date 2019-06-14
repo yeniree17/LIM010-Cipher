@@ -6,6 +6,7 @@ html {
 body {
     background-color: #9cff33;
     max-width: 1200px;
+    background-attachment: fixed;
 }
 header {
     width: 1000px;
@@ -182,7 +183,7 @@ button[type='button']:hover{
     margin-bottom: 0px;
     margin-right: 0px;
     padding: 0px;
-    display: inline-flex;
+    display: flex;
 }
 .resaltar {
     color: darkblue;

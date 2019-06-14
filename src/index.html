@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <title>Pachamama te aconseja</title>
-  <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0, maximum-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Indie+Flower&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 <body>
   <header>
     <img src="https://user-images.githubusercontent.com/50186958/59153857-06de4400-8a2a-11e9-8db1-64b0f2037716.png"
-      alt="">
+      alt="logo principal">
   </header>
   <main>
     <!-- Pantalla de Bienvenida -->
@@ -23,7 +23,8 @@
       <h1>... y te obsequia sus secretos</h1>
       <p class="mje">Primero ingresa tu nombre y la contraseña que te suministraron</p>
       <figure class="img1">
-        <img src="https://user-images.githubusercontent.com/50186958/59077436-37927200-88a0-11e9-91c7-46ccb1838bb7.png" alt="green-brain">
+        <img src="https://user-images.githubusercontent.com/50186958/59077436-37927200-88a0-11e9-91c7-46ccb1838bb7.png"
+          alt="green-brain">
       </figure>
       <form class="formulario">
         <label for="name"><strong>Ingresa tu nombre:</strong></label>
@@ -33,7 +34,6 @@
         <i class="em em-closed_lock_with_key"></i>
         <input class="box" id="password" type="password" placeholder="Contraseña en Mayúscula" required>
         <h4 class="alerta" id="error"></h4>
-        <br>
         <button class="btn" type="submit" id="botonPassword">Ingresar</button>
       </form>
     </section>
@@ -46,10 +46,12 @@
         <button class="btn" type="button" id="descifrarSecreto">Descifrar Secreto</button>
       </form>
       <figure class="img2">
-        <img src="https://user-images.githubusercontent.com/50186958/59080307-a924ed00-88ad-11e9-8a44-84949594f51b.png" alt="consejo">
+        <img src="https://user-images.githubusercontent.com/50186958/59080307-a924ed00-88ad-11e9-8a44-84949594f51b.png"
+          alt="consejo">
       </figure>
       <figure class="img3">
-        <img src="https://user-images.githubusercontent.com/50186958/59080352-dffb0300-88ad-11e9-9dd5-b6c2f4694c52.png" alt="secreto">
+        <img src="https://user-images.githubusercontent.com/50186958/59080352-dffb0300-88ad-11e9-9dd5-b6c2f4694c52.png"
+          alt="secreto">
       </figure>
     </section>
     <!-- Pantalla de codificar el Consejo -->
@@ -60,9 +62,11 @@
         Primero, debes crear un <strong><em>Código Clave</em></strong> que será utilizado por la persona <br>
         que descifre tu mensaje <em>(debe tener sólo valores numéricos desde el 01 al 99)</em></p>
       <img class="img4"
-        src="https://user-images.githubusercontent.com/50186958/59167120-3443f400-8af5-11e9-8475-c57a2dcf8358.png" alt="amb1">
+        src="https://user-images.githubusercontent.com/50186958/59167120-3443f400-8af5-11e9-8475-c57a2dcf8358.png"
+        alt="amb1">
       <img class="img4"
-        src="https://user-images.githubusercontent.com/50186958/59168747-bbe13100-8afc-11e9-8722-42b22cd1ebff.png" alt="amb2">
+        src="https://user-images.githubusercontent.com/50186958/59168747-bbe13100-8afc-11e9-8722-42b22cd1ebff.png"
+        alt="amb2">
       <form class="formulario1">
         <i class="em em-key"></i>
         <input class="box" id="claveCif" type="number" min="1" max="99" placeholder="Tu código Clave" required>
@@ -77,14 +81,17 @@
       <h2>Codificando ecologicamente....</h2>
       <h3 id="nombre4"> Genial </h3>
       <img class="img5"
-        src="https://user-images.githubusercontent.com/50186958/59169734-111f4180-8b01-11e9-8a65-f211acb14fce.png" alt="amb3">
+        src="https://user-images.githubusercontent.com/50186958/59169734-111f4180-8b01-11e9-8a65-f211acb14fce.png"
+        alt="amb3">
       <p>Tu consejo ha sido codificado exitosamente!!</p>
       <img class="img4"
-        src="https://user-images.githubusercontent.com/50186958/59169981-2183ec00-8b02-11e9-8cd6-081f41e755d2.png" alt="amb4">
+        src="https://user-images.githubusercontent.com/50186958/59169981-2183ec00-8b02-11e9-8cd6-081f41e755d2.png"
+        alt="amb4">
       <textarea class="box1" id="mjeCifrado" cols="50" rows="1"></textarea>
-      <p> <strong>La Pachamama</strong> está muy feliz !!!
-        <br> Tu mensaje promueve el <strong class="resaltar">"Desarrollo Sostenible"</strong>
-        <br> de nuestro Planeta Tierra. No olvides compartir tu consejo y tu clave!</p>
+      <p><strong>La Pachamama</strong> está muy feliz !!!</p>
+      <p>Tu mensaje promueve el <strong class="resaltar">"Desarrollo Sostenible"</strong>
+        de nuestro Planeta Tierra.</p>
+      <p>No olvides compartir tu consejo y tu clave!</p>
       <button id="back1" class="btn" type="button">Volver al Inicio</button>
     </section>
     <!-- Pantalla de Descifrar el Secreto -->
@@ -94,10 +101,10 @@
         Primero, debes colocar el código clave que te suministraron</p>
       <img class="img4"
         src="https://user-images.githubusercontent.com/50186958/59173301-eab5d200-8b11-11e9-85b5-e3d91efb864a.png"
-        alt="">
+        alt="amb5">
       <img class="img4"
         src="https://user-images.githubusercontent.com/50186958/59173590-200eef80-8b13-11e9-8c0c-b86431723759.png"
-        alt="">
+        alt="amb6">
       <form class="formulario1">
         <i class="em em-key"></i>
         <input class="box" id="claveDescif" type="number" min="1" max="99" placeholder="Tu código Clave" required>
@@ -113,15 +120,15 @@
       <h3>A partir de hoy: </h3>
       <img class="img6"
         src="https://user-images.githubusercontent.com/50186958/59174000-11c1d300-8b15-11e9-905f-8026e9b7069f.png"
-        alt="">
+        alt="amb7">
       <textarea class="box1" id="mjeDescifrado" cols="50" rows="1"></textarea>
       <p><strong>De esta manera, contribuyes con el cuidado del medio ambiente</strong></p>
       <img class="img4"
         src="https://user-images.githubusercontent.com/50186958/59174015-23a37600-8b15-11e9-9da0-78c72e00545d.png"
-        alt="">
-      <p><br> Recuerda, <strong class="resaltar"><em>Sé ecoeficiente !!!</em></strong>
-        Es tu deber dejar una huella ecológica positiva.
-        La Pachamama estará muy agradecida con tu aporte</p>
+        alt="amb8">
+      <p>Recuerda, <strong class="resaltar"><em>Sé ecoeficiente !!!</em></strong>
+        Es tu deber dejar una huella ecológica positiva</p>
+      <p>La Pachamama estará muy agradecida con tu aporte</p>
       <form class="formulario3">
         <label for="volver">Animate a compartir tu consejo con otra persona!</label>
         <button id="back2" class="btn" type="button">Volver al Inicio</button>
@@ -129,9 +136,10 @@
     </section>
   </main>
   <footer>
-    <p class="mje">© Todos los Derechos Reservados - Desarrollado por <strong>Rosly 2019<i class="em em-female-scientist"></i> en Laboratoria <i class="em em-orange_heart"></i>	
-      </strong>
-      <br> <a href="mailto:yeniree17@gmail.com">Contáctanos</a> y Siguenos en </p>
+    <p class="mje">© Todos los Derechos Reservados - Desarrollado por <strong>Rosly 2019<i
+          class="em em-female-scientist"></i> en Laboratoria <i class="em em-orange_heart"></i>
+      </strong></p>
+    <p class="mje"><a href="mailto:yeniree17@gmail.com">Contáctanos</a> y Siguenos en </p>
   </footer>
   <script src="cipher.js"></script>
   <script src="index.js"></script>
