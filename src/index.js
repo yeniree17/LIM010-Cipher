@@ -55,7 +55,7 @@ boton4.addEventListener("click", () => {
     if (string === "" || offset === ""){
         document.getElementById("claveCif").focus();
         document.getElementById("txtCif").focus();
-        document.getElementById("required").innerHTML = "Debes completa los campos"
+        document.getElementById("required").innerHTML = "Debes completar los campos"
     }
     else {
     const mjeCifrado = document.getElementById("mjeCifrado");  
@@ -85,7 +85,7 @@ boton6.addEventListener("click", () => {
     if (string1 === "" || offset1 === "") {
         document.getElementById("claveDescif").focus();
         document.getElementById("txtDescif").focus();
-        document.getElementById("required1").innerHTML = "Debes completa los campos"
+        document.getElementById("required1").innerHTML = "Debes completar los campos"
     }
     else { 
     const mjeDescifrado = document.getElementById("mjeDescifrado");

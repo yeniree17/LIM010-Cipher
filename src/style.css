@@ -70,13 +70,14 @@ label{
     display: block;
     width: 100%;
     margin: 10px;
-    margin-left: 30px;
+    margin-left: 50px;
 }
 .box{
     margin-bottom: 10px;
     width: 60%;
     padding: 10px;
-    margin-left: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
 }
 .box:focus{
     border: 1px solid #1668c4;
@@ -99,7 +100,7 @@ button[type='submit']:hover{
     color: rgb(114, 104, 101);
     border: none;
     padding:10px;
-    margin-top: 20px;
+    margin-top: 15px;
     margin:10px;
     font-size: 20px;
     width: 30%;
@@ -142,17 +143,18 @@ button[type='button']:hover{
     float:left;
 }
 .img4 {
-    width: 250px;
+    width: 300px;
     height: 150px;
     margin-top: 0px;
     margin-bottom: 0px;
-    margin-left: 50px;
+    margin-left: 40px;
+    margin-right: 20PX;
     float: left;
     padding: 0px;
 }
 .img5 {
     width: 400px;
-    height: 80px;
+    height: 70px;
 }
 .img6 {
     width: 250px;
@@ -187,7 +189,7 @@ button[type='button']:hover{
 }
 footer{
     clear: both;
-    padding-top: 40px;
+    padding-top:35px;
     font-size: 15px;
     text-align:center;
 }

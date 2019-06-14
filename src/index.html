@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <title>Pachamama te aconseja</title>
   <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1.0, maximum-scale=1.0">
+  <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
   <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Indie+Flower&display=swap" rel="stylesheet">
   <link rel="shortcut icon" type="imagen/png"
@@ -26,9 +27,11 @@
       </figure>
       <form class="formulario">
         <label for="name"><strong>Ingresa tu nombre:</strong></label>
-        <input class="box" id="nombre" type="text" placeholder="&#128515 Tu nombre" required>
+        <i class="em em-busts_in_silhouette"></i>
+        <input class="box" id="nombre" type="text" placeholder="Tu nombre" required>
         <label for="password"><strong>Ingresa tu contraseña:</strong></label>
-        <input class="box" id="password" type="password" placeholder="&#128272 Contraseña en Mayúscula" required>
+        <i class="em em-closed_lock_with_key"></i>
+        <input class="box" id="password" type="password" placeholder="Contraseña en Mayúscula" required>
         <h4 class="alerta" id="error"></h4>
         <br>
         <button class="btn" type="submit" id="botonPassword">Ingresar</button>
@@ -61,7 +64,9 @@
       <img class="img4"
         src="https://user-images.githubusercontent.com/50186958/59168747-bbe13100-8afc-11e9-8722-42b22cd1ebff.png" alt="amb2">
       <form class="formulario1">
+        <i class="em em-key"></i>
         <input class="box" id="claveCif" type="number" min="1" max="99" placeholder="Tu código Clave" required>
+        <i class="em em-clipboard"></i>
         <input class="box" id="txtCif" type="text" placeholder="Escribe tu consejo aqui" required>
         <h4 class="alerta" id="required"></h4>
         <button class="btn" type="button" id="botonConsejo">Enviar</button>
@@ -94,7 +99,9 @@
         src="https://user-images.githubusercontent.com/50186958/59173590-200eef80-8b13-11e9-8c0c-b86431723759.png"
         alt="">
       <form class="formulario1">
+        <i class="em em-key"></i>
         <input class="box" id="claveDescif" type="number" min="1" max="99" placeholder="Tu código Clave" required>
+        <i class="em em-memo"></i>
         <input class="box" id="txtDescif" type="text" placeholder="Ingresa tu secreto aqui" required>
         <h4 class="alerta" id="required1"></h4>
         <button class="btn" type="button" id="botonSecreto">Descifrar</button>
@@ -113,7 +120,7 @@
         src="https://user-images.githubusercontent.com/50186958/59174015-23a37600-8b15-11e9-9da0-78c72e00545d.png"
         alt="">
       <p><br> Recuerda, <strong class="resaltar"><em>Sé ecoeficiente !!!</em></strong>
-        Es tu deber dejar una huella ecológica positiva
+        Es tu deber dejar una huella ecológica positiva.
         La Pachamama estará muy agradecida con tu aporte</p>
       <form class="formulario3">
         <label for="volver">Animate a compartir tu consejo con otra persona!</label>
@@ -122,8 +129,9 @@
     </section>
   </main>
   <footer>
-    <p class="mje"> (c) Todos los Derechos Reservados - Desarrollado por <strong>Rosly 2019</strong>
-      <br> <a href="mailto:yeniree17@gmail.com">Contáctanos</a></p>
+    <p class="mje">© Todos los Derechos Reservados - Desarrollado por <strong>Rosly 2019<i class="em em-female-scientist"></i> en Laboratoria <i class="em em-orange_heart"></i>	
+      </strong>
+      <br> <a href="mailto:yeniree17@gmail.com">Contáctanos</a> y Siguenos en </p>
   </footer>
   <script src="cipher.js"></script>
   <script src="index.js"></script>
