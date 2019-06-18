@@ -1,30 +1,28 @@
 /* Acá van tus reglas de estilo */
-html {
+body {
+    background-color: #9cff33;
+    width: 100%;
+    height: auto;   
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body {
-    background-color: #9cff33;
-    width: 100%;   
-    margin: 0;
+header{
     display: flex;
-    flex-flow: row wrap;
     justify-content: center;
 }
-header {
-    display: flex;
-    width: 100%;
-  }
   .logo{
-      width:360px;
+      width:100%;
       height: 75px;  
-      justify-content: center;
   }
-  .ventana1{
+  .container{
+      width: 90%;
+      height: 450px;
       display: flex;
       flex-flow: column wrap;
-      margin: 10px;
+      margin: 5px;
+      justify-content: center;
+      align-content: space-around;
   }
   h1 {
     margin-right: 15px;
@@ -35,10 +33,9 @@ header {
     font-size: 20px;
 }
 .img1 {
-    width: 300px;
-    height: 150px;
+    width: 90%;
     text-align: center;
-    padding-left: 30px;
+    padding-left: 40px;
 }
 .texto {
     font-size: 15px;
@@ -46,12 +43,12 @@ header {
     text-align: center;
 }
 .formulario {
-    width: 100%;
+    width: 92%;
     height: 180px;
     color: darkblue;
     font-size: 15px;
     margin: 0px;
-    margin-left: 30px;
+    padding-left: 60px;
 }
 label{
     display: flex;
@@ -104,9 +101,13 @@ button[type='button']:hover{
   footer{
     clear: both;
     margin: 10px;
-    padding-top: 15px;
+    padding-top: 5px;
     font-size: 15px;
     text-align:center;
+}
+.rrss{
+    width: 25px;
+    height: 25px;
 }
 .hide {
     display: none;
@@ -117,6 +118,9 @@ button[type='button']:hover{
         width: 100%;
         height: auto;
     } 
+    .ventana1{
+        flex-flow: row wrap;
+    }
     h1{
         font-size: 35px;
     }
