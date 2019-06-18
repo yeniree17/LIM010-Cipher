@@ -3,7 +3,8 @@ const nombreUsuario = document.getElementById("nombre");
 const password = document.getElementById("password");
 const clave = "laboratoria".toUpperCase();
 const boton = document.getElementById("botonPassword");
-let intento = 0;
+let intento = 0; //variable que representa los intentos para login
+/*Display de las ventanas*/
 const ventana1 = document.getElementById("inicio");
 const ventana2 = document.getElementById("opciones");
 const ventana3 = document.getElementById("cifMje");
@@ -46,12 +47,14 @@ boton3.addEventListener("click", () => {
     ventana5.classList.remove("hide");//cuando el usuario selecciona descifrar
     document.getElementById("nombre3").innerHTML = `${nombre1}!`;
 });
-/*Ejecuta el metodo cifrado ventana 3 y accede a resultadosCif ventana 4*/
+/*Ejecuta el metodo cifrado ventana 3 y accede al consejo cifrado ventana 4*/
 const boton4 = document.getElementById("botonConsejo");
 boton4.addEventListener("click", () => {
     const nombre2 = nombreUsuario.value;
+    /*Captura el valor de offset y el mje ingresado por el usuario*/
     let offset = document.getElementById("claveCif").value;
     let string = document.getElementById("txtCif").value;
+   /*Aviso al usuario para que rellene los campos y no pueda avanzar*/
     if (string === "" || offset === ""){
         document.getElementById("claveCif").focus();
         document.getElementById("txtCif").focus();
@@ -61,9 +64,9 @@ boton4.addEventListener("click", () => {
     const mjeCifrado = document.getElementById("mjeCifrado");  
     ventana3.classList.add("hide");//oculta la opcion de cifrado
     ventana4.classList.remove("hide");//muestra el resultado de cifrado  
-    mjeCifrado.innerHTML = cipher.encode(offset, string);
+    mjeCifrado.innerHTML = cipher.encode(offset, string);//Ejecuta el metodo de cifrado
     document.getElementById("nombre4").innerHTML = `Genial ${nombre2}!`;
-    document.getElementById("required").innerHTML = "";
+    document.getElementById("required").innerHTML = "";//Resetea el aviso
     }
 });
 /*Para retornar al pagina de Inicio luego de codificar*/
@@ -71,17 +74,20 @@ const boton5 = document.getElementById("back1");
 boton5.addEventListener("click", () => {
     ventana4.classList.add("hide");//oculta los resultados
     ventana1.classList.remove("hide");//muestra la pantalla de inicio
+/*Borra la informacion cuando regresa al inicio*/
     document.getElementById("nombre").value = "";
     document.getElementById("password").value = "";
     document.getElementById("error").innerHTML = "";
     document.getElementById("claveCif").value = "";
     document.getElementById("txtCif").value = "";
 });
-/*Ejecuta el metodo descifrado ventana 5 y accede a resultadoDescif ventana 6*/
+/*Ejecuta el metodo descifrado ventana 5 y accede al resultado del descifrado del secreto ventana 6*/
 const boton6 = document.getElementById("botonSecreto");
 boton6.addEventListener("click", () => {
+    /*Captura el valor de offset y el mje ingresado por el usuario*/
     const offset1 = document.getElementById("claveDescif").value;
     const string1 = document.getElementById("txtDescif").value;
+    /*Aviso al usuario para que rellene los campos y no pueda avanzar*/
     if (string1 === "" || offset1 === "") {
         document.getElementById("claveDescif").focus();
         document.getElementById("txtDescif").focus();
@@ -89,10 +95,10 @@ boton6.addEventListener("click", () => {
     }
     else { 
     const mjeDescifrado = document.getElementById("mjeDescifrado");
-    mjeDescifrado.innerHTML = cipher.decode(offset1, string1);
+    mjeDescifrado.innerHTML = cipher.decode(offset1, string1);//Ejecuta el metodo de descifrado
     ventana5.classList.add("hide");//luego de ejecutar el descifrado
     ventana6.classList.remove("hide");//muestra el resultado de descifrar
-    document.getElementById("required1").innerHTML = "";
+    document.getElementById("required1").innerHTML = "";//Resetea el aviso
     }
 });
 /*Para retornar al pagina de Inicio luego de descifrar*/
@@ -100,6 +106,7 @@ const boton7 = document.getElementById("back2");
 boton7.addEventListener("click", () => {
     ventana6.classList.add("hide");//oculta el resultado descifrado
     ventana1.classList.remove("hide");//retorna a la ventana de inicio
+    /*Borra la informacion cuando regresa al inicio*/
     document.getElementById("nombre").value = "";
     document.getElementById("password").value = "";
     document.getElementById("error").innerHTML = "";

@@ -15,19 +15,19 @@ body {
 header {
     display: flex;
     width: 100%;
-    justify-content: center;
   }
   .logo{
-      width:350px;
+      width:360px;
       height: 75px;  
+      justify-content: center;
   }
-  .ventana{
+  .ventana1{
       display: flex;
-      flex-flow: row wrap;
+      flex-flow: column wrap;
       margin: 10px;
   }
   h1 {
-    margin-right: 10px;
+    margin-right: 15px;
     margin: 0px;
     text-align: right;
     font-family: 'Indie Flower', cursive;
@@ -41,8 +41,9 @@ header {
     padding-left: 30px;
 }
 .texto {
-    font-size: 20px;
-    margin: 0px;
+    font-size: 15px;
+    margin: 5px;
+    text-align: center;
 }
 .formulario {
     width: 100%;
@@ -50,6 +51,7 @@ header {
     color: darkblue;
     font-size: 15px;
     margin: 0px;
+    margin-left: 30px;
 }
 label{
     display: flex;
