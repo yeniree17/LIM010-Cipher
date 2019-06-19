@@ -33,7 +33,7 @@ header{
     font-size: 20px;
 }
 h2{
-    width: 200px;
+    width: 90%;
     margin-left: 30px;
     font-size: 20px;
 }
@@ -126,6 +126,11 @@ button[type='button']:hover{
     width: 40%;
     border-radius: 20px;
 }
+.mje1{
+    width:90%;
+    margin-left: 40px;
+    .................................................................................................................................................................................................................................
+}
   footer{
     clear: both;
     margin: 10px;
@@ -208,10 +213,13 @@ button[type='button']:hover{
 }
   footer{
     clear: both;
+    display: flex;
     font-size: 20px;
     padding: 0px;
-    flex-grow: 1;
+    justify-content: space-between;
+    align-items: baseline;
 }
+
   /*
 h1 {
     width: 100%;
