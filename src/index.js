@@ -29,7 +29,7 @@ boton.addEventListener("click", (event) => {
         boton.disabled = true;
     }
     else {
-        document.getElementById("error").innerHTML = "Contraseña Incorrecta! Recuerda colocar la clave en mayúscula, al 3er intento fallido, ya no podras ingresar";
+        document.getElementById("error").innerHTML = "Contraseña Incorrecta! Recuerda colocar la clave en mayúscula, al 3er intento fallido, ya no podrás ingresar";
         intento++;
     }
 });
