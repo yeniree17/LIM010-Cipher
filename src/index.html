@@ -6,7 +6,7 @@
   <title>Pachamama te aconseja</title>
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">  
-  <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Indie+Flower&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Gochi+Hand%7CIndie+Flower&display=swap" rel="stylesheet">
   <link rel="shortcut icon" type="imagen/png"
   href="https://pngimage.net/wp-content/uploads/2018/06/icono-medio-ambiente-png-3.png" />
   <link rel="stylesheet" href="style.css" />
@@ -15,7 +15,7 @@
 <body>
   <header>
     <img class="logo" src="https://user-images.githubusercontent.com/50186958/59612794-5506dd80-90e3-11e9-881b-1c55b96be64d.png"
-      alt="Pachamama te aconseja">
+      alt="Pachamama-te-aconseja">
   </header>
   <main>
     <!-- Pantalla de Bienvenida -->
@@ -24,12 +24,12 @@
       <h2 class="title">... y te obsequia sus secretos</h2>
       <p class="texto">Primero ingresa tu nombre y la contraseña que te suministraron</p>
         <img class="img1" src="https://user-images.githubusercontent.com/50186958/59077436-37927200-88a0-11e9-91c7-46ccb1838bb7.png"
-          alt="pensando verde">
+          alt="pensando-verde">
       <form class="formulario">
-        <label for="nombre"><strong>Ingresa tu nombre:</strong></label>
+        <label for="nombre">Ingresa tu nombre:</label>
         <i class="em em-busts_in_silhouette"></i>
         <input class="box" id="nombre" type="text" placeholder="Tu nombre" required>
-        <label for="password"><strong>Ingresa tu contraseña:</strong></label>
+        <label for="password">Ingresa tu contraseña:</label>
         <i class="em em-closed_lock_with_key"></i>
         <input class="box" id="password" type="password" placeholder="Contraseña en Mayúscula" required>
         <p class="alerta" id="error"></p>
@@ -54,16 +54,16 @@
     <!-- Pantalla de codificar el Consejo -->
     <section class="container ventana3 hide" id="cifMje">
       <p class="subtitle">¿Quieres ayudar a nuestra tierra a crear consciencia ambiental?</p>
-      <p class="mje1">Te invitamos a compartir con tus amigos de forma divertida tus buenas prácticas ambientales</p>
-      <p> Primero, debes crear un <strong><em>Código Clave</em></strong> que será utilizado por la persona
-        que descifre tu mensaje <em>(debe tener sólo valores numéricos desde el 01 al 99)</em></p>
-      <img class="img4"
+      <p class="mje">Te invitamos a compartir con tus amigos de forma divertida tus buenas prácticas ambientales
+      Primero, debes crear un <span class="highlight italic">Código Clave</span> que será utilizado por la persona
+        que descifre tu mensaje <span class="italic">(debe tener sólo valores numéricos desde el 01 al 99)</span></p>
+          <img class="img3"
         src="https://user-images.githubusercontent.com/50186958/59167120-3443f400-8af5-11e9-8475-c57a2dcf8358.png"
-        alt="amb1">
-      <img class="img4"
+        alt="recicla">
+          <img class="img4"
         src="https://user-images.githubusercontent.com/50186958/59168747-bbe13100-8afc-11e9-8722-42b22cd1ebff.png"
-        alt="amb2">
-      <form class="formulario1">
+        alt="ahorro-energetico">
+      <form class="formulario">
         <i class="em em-key"></i>
         <input class="box" id="claveCif" type="number" min="1" max="99" placeholder="Tu código Clave" required>
         <i class="em em-clipboard"></i>
@@ -78,30 +78,30 @@
       <P class="subtitle" id="nombre4"> Genial </p>
       <img class="img5"
         src="https://user-images.githubusercontent.com/50186958/59169734-111f4180-8b01-11e9-8a65-f211acb14fce.png"
-        alt="amb3">
+        alt="loading">
       <p>Tu consejo ha sido codificado exitosamente!!</p>
-      <img class="img4"
+      <img class="img5"
         src="https://user-images.githubusercontent.com/50186958/59169981-2183ec00-8b02-11e9-8cd6-081f41e755d2.png"
-        alt="amb4">
+        alt="mundo-feliz">
       <textarea class="box1" id="mjeCifrado" cols="50" rows="1"></textarea>
-      <p><strong>La Pachamama</strong> está muy feliz !!!</p>
-      <p>Tu mensaje promueve el <strong class="resaltar">"Desarrollo Sostenible"</strong>
+      <p class="mje1"> <span class="highlight">La Pachamama</span> está muy feliz !!!</p>
+      <p class="mje1">Tu mensaje promueve el <span class="resaltar">"Desarrollo Sostenible"</span>
         de nuestro Planeta Tierra.</p>
-      <p>No olvides compartir tu consejo y tu clave!</p>
-      <button id="back1" class="btn" type="button">Volver al Inicio</button>
+      <p class="mje1">No olvides compartir tu consejo y tu clave!</p>
+      <button id="back1" class="btn1" type="button">Volver al Inicio</button>
     </section>
     <!-- Pantalla de Descifrar el Secreto -->
     <section class="container ventana5 hide" id="descifMje">
       <p class="subtitle" id="nombre3"> </p>
-      <p class="mje1"> <br> Descifra el secreto que cambiará a partir de hoy tu estilo de vida.
+      <p class="mje1">Descifra el secreto que cambiará a partir de hoy tu estilo de vida.
         Primero, debes colocar el código clave que te suministraron</p>
-      <img class="img4"
+      <img class="img5"
         src="https://user-images.githubusercontent.com/50186958/59173301-eab5d200-8b11-11e9-85b5-e3d91efb864a.png"
-        alt="amb5">
-      <img class="img4"
+        alt="estilo-vida-verde">
+      <img class="img5"
         src="https://user-images.githubusercontent.com/50186958/59173590-200eef80-8b13-11e9-8c0c-b86431723759.png"
-        alt="amb6">
-      <form class="formulario1">
+        alt="lupa-descifra">
+      <form class="formulario">
         <i class="em em-key"></i>
         <input class="box" id="claveDescif" type="number" min="1" max="99" placeholder="Tu código Clave" required>
         <i class="em em-memo"></i>
@@ -114,29 +114,29 @@
     <section class="container ventana6 hide" id="resultDescif">
       <p class="subtitle">Descifrando ambientalmente...</p>
       <p class="subtitle">A partir de hoy: </p>
-      <img class="img6"
+      <img class="img5"
         src="https://user-images.githubusercontent.com/50186958/59174000-11c1d300-8b15-11e9-905f-8026e9b7069f.png"
-        alt="amb7">
+        alt="persona-cuida-ambiente">
       <textarea class="box1" id="mjeDescifrado" cols="50" rows="1"></textarea>
-      <p><strong>De esta manera, contribuyes con el cuidado del medio ambiente</strong></p>
-      <img class="img4"
+      <p class="highlight mje1">De esta manera, contribuyes con el cuidado del medio ambiente</strong></p>
+      <img class="img5"
         src="https://user-images.githubusercontent.com/50186958/59174015-23a37600-8b15-11e9-9da0-78c72e00545d.png"
-        alt="amb8">
-      <p>Recuerda, <strong class="resaltar"><em>Sé ecoeficiente !!!</em></strong>
+        alt="ama-tu-planeta">
+      <p class="mje1">Recuerda, <span class="resaltar">Sé ecoeficiente !!!</span>
         Es tu deber dejar una huella ecológica positiva</p>
-      <p>La Pachamama estará muy agradecida con tu aporte</p>
-      <form class="formulario3">
+      <p class="mje1">La Pachamama estará muy agradecida con tu aporte</p>
+      <form class="formulario">
         <label for="back2">Animate a compartir tu consejo con otra persona!</label>
-        <button id="back2" class="btn" type="button">Volver al Inicio</button>
+        <button id="back2" class="btn1" type="button">Volver al Inicio</button>
       </form>
     </section>
   </main>
    <!--Pie de pagina-->
   <footer>
-    <p class="mje">© Todos los Derechos Reservados - Desarrollado por <strong>Rosly 2019<i
+    <p>© Todos los Derechos Reservados - Desarrollado por <span class="resaltar">Rosly 2019</span><i
           class="em em-female-scientist"></i> en Laboratoria <i class="em em-orange_heart"></i>
-      </strong></p>
-    <p class="mje">Contáctanos <a href="mailto:yeniree17@gmail.com"><img class="rrss" src="./img/mail.svg" alt="email"></a>
+      </p>
+    <p>Contáctanos <a href="mailto:yeniree17@gmail.com"><img class="rrss" src="./img/mail.svg" alt="email"></a>
       <a href="https://www.facebook.com/yeniree.guerrero"><img class="rrss" src="./img/facebook.svg" alt="fb"></a>
       <a href="https://www.instagram.com/yenccs/"><img class="rrss" src="./img/instagram.svg" alt="ig"></a>
       <a href="https://twitter.com/yeniree_vzla"><img class="rrss" src="./img/twitter.svg" alt="tw"></a>
