@@ -56,8 +56,7 @@ header {
     margin: 5px;
     text-align: center;
 }
-.formulario {
-    color: darkblue;
+.formulario{
     font-size: 15px;
     text-align: center;
 }
@@ -69,9 +68,14 @@ header {
 .formulario1{
     text-align: center; 
 }
+.formulario3{
+    font-size: 15px;
+    text-align: center;
+}
 label{
     display: block;
     font-weight: bolder;
+    color: darkblue;
 }
 .box{
     margin: 10px;
@@ -192,10 +196,6 @@ font-style: italic;
 }
 /*Aqui va mi pantalla grande */
 
-
-
-
-/*Aqui va mi pantalla grande */
   @media screen and (min-width:764px){
     .logo {
         width: 100%;
@@ -249,6 +249,10 @@ font-style: italic;
   .formulario2{
       height: 60px;
   }
+  .formulario3{
+    width: 70%;
+    font-size: 20px; 
+  }
   .box{
       padding: 10px; 
   }
@@ -286,11 +290,11 @@ figure{
     font-size: 25px;
     margin: 0px auto;
   }
-  .mje3{
+.mje3{
     width: 40%;
     font-size: 25px;
   }
-  .mje4{
+.mje4{
 width: 90%;
 margin: 0px;
 font-size: 25px;
@@ -302,7 +306,7 @@ text-align: center;
     font-size: 25px; 
 }
 .mjefinal{
-    width: 70%
+    width: 70%;
 }
   footer{
     display: flex;
@@ -313,191 +317,4 @@ text-align: center;
     flex-direction: row-reverse; 
     justify-content: space-between;
     align-items: baseline;
-}
-
-  /*
-h1 {
-    width: 100%;
-    margin: 0px;
-    margin-left: 60px;
-    text-align: right;
-    font-family: 'Indie Flower', cursive;
-    text-shadow: 2px 2px 2px orangered;
-    font-size: 35px;
-}
-p{
-    display: flex;
-    margin:0px;
-    text-align: center;
-}
-h2{
-    margin-left: 60px;
-    margin-bottom: 0px;
-    margin-top: 10px;
-}
-h3{
-    display: inline-block;
-    margin-right: 400px;
-    margin-left: 50px;
-    margin-bottom: 0px;
-}
-.mje{
-    width:1000px;
-    text-align: center;
-    padding-left: 150px;
-}
-.img1 {
-    width: 50%;
-    height: 280px;
-    margin: 0px;
-    /*margin-left: 90px;
-    float: left;
-}
-.formulario {
-    width: 50%;
-    height: 280px;
-    margin-left: 60px;
-    padding-left: 50px;
-    display: inline-block;
-    color: darkblue;
-    font-size: 20px;
-    vertical-align: middle;
-}
-.alerta{
-  margin:0px;
-font-size: 20px; 
-  color: red;
-  display: inline-flex;
-  text-align: left;
-}
-label{
-    display: block;
-    width: 100%;
-    margin: 10px;
-    margin-left: 50px;
-}
-.box{
-    margin-bottom: 10px;
-    width: 60%;
-    padding: 10px;
-    margin-left: 10px;
-    margin-right: 10px;
-}
-.box:focus{
-    border: 1px solid #1668c4;
-}
-button[type='submit']{
-    background: #1668c4;
-    color: #fff;
-    font-size: 15px;
-    border: none;
-    margin: 20px;
-    width: 30%;
-    padding: 10px;
-}
-button[type='submit']:hover{
-    background: #4a88f4;
-    cursor: pointer;
-}
-.btn {
-    background: rgb(243, 220, 10);
-    color: rgb(114, 104, 101);
-    border: none;
-    padding:10px;
-    margin-top: 15px;
-    margin:10px;
-    font-size: 20px;
-    width: 30%;
-    border-radius: 20px;
-}
-button[type='button']:hover{
-    background: #4a88f4;
-    color: antiquewhite;
-    cursor: pointer;
-}
-.img2 {
-    width: 250px;
-    height: 220px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 300px;
-    display:inline-flex;
-    padding: 0px;
-    padding-left: 100px;
-}    
-.img3 {
-    width: 250px;
-    height: 220px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 20px;
-    display:inline-flex;
-    padding: 0px;
-}
-.formulario2{
-    width: 1000px;
-    height: 60px;
-    margin-left: 150px;
-    padding-left: 200px;
-    display: inline-block;
-}
-.mje1{
-    width:800px;
-    margin-left: 40px;
-    float:left;
-}
-.img4 {
-    width: 300px;
-    height: 150px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    margin-left: 40px;
-    margin-right: 20PX;
-    float: left;
-    padding: 0px;
-}
-.img5 {
-    width: 400px;
-    height: 70px;
-}
-.img6 {
-    width: 250px;
-    height: 150px;
-    display: inline-flex;
-    float: right;
-}
-.box1{
-    margin-top: 0px;
-    margin-bottom: 10px;
-    margin-left: 200px;
-    margin-right: 0px;
-    width: 50%;
-    padding: 10px;
-    font-size: 25px;
-    color: darkblue;
-    font-family: "sans serif", bold;
-     
-}
-.formulario3{
-    width: 800px;
-    height: 60px;
-    margin-left: 60px;
-    margin-top: 20px;
-    margin-bottom: 0px;
-    margin-right: 0px;
-    padding: 0px;
-    display: flex;
-}
-.resaltar {
-    color: darkblue;
-}
-footer{
-    clear: both;
-    padding-top:35px;
-    font-size: 15px;
-    text-align:center;
-}
-*/
-.hide {
-    display: none;
 }
