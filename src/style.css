@@ -61,10 +61,13 @@ header {
     font-size: 15px;
     text-align: center;
 }
-.formulario2 {
+.formulario2{
     width: 100%;
     height: 80px;
     text-align: center;
+}
+.formulario1{
+    text-align: center; 
 }
 label{
     display: block;
@@ -164,11 +167,14 @@ font-style: italic;
   width: 40%;
   align-self: center; 
 }
-.mje{
-    width:60%;
-    font-size: 25px;
+.mje .mje3 .mje4{
+    font-size: 15px;
 }
 .mje1{
+    width:90%;
+    margin:0px auto;
+  }
+  .mje2{
     width:90%;
     margin:0px auto;
   }
@@ -200,6 +206,9 @@ font-style: italic;
         align-content: center;
         height: auto;
     }
+    .ventana4{
+        flex-wrap: wrap;
+    }
     h1 {
       font-size: 1px;
     }
@@ -217,11 +226,6 @@ font-style: italic;
         width: 40%;
         height: 240px;
     }
-    .picture{
-        height: 180px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
     .img2 {
         width: 200px;
         height: 200px;
@@ -235,8 +239,12 @@ font-style: italic;
         font-size: 25px;
   }
   .formulario{
-      width: 50%;
+      width: 45%;
       font-size: 20px;
+  }
+  .formulario1{
+    font-size: 20px;
+    width: 70%;
   }
   .formulario2{
       height: 60px;
@@ -256,13 +264,45 @@ font-style: italic;
 figure{
     margin:10px auto;
 }
+.img3{
+    width: 15%;
+}
 .img4{
     width: 300px;
     height: 150px;
 }
+.img5{
+    width: 20%; 
+  }
+.mje{
+    width:70%;
+    font-size: 25px;
+}
 .mje1{
     font-size: 25px;
-    float: left;
+}
+.mje2{
+    width:60%;
+    font-size: 25px;
+    margin: 0px auto;
+  }
+  .mje3{
+    width: 40%;
+    font-size: 25px;
+  }
+  .mje4{
+width: 90%;
+margin: 0px;
+font-size: 25px;
+text-align: center;  
+}
+.box1{
+    width: 50%;
+    padding: 5px;
+    font-size: 25px; 
+}
+.mjefinal{
+    width: 70%
 }
   footer{
     display: flex;
